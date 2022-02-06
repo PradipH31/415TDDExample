@@ -7,6 +7,8 @@ class TestFormatter {
 	@Test
 	public void testCenterLine() {
 		Formatter f = new Formatter();
+		f.setLineWidth(10);
+		assertEquals("   word   ", f.center("word"));
 	}
 
 }
