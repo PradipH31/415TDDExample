@@ -12,4 +12,12 @@ class TestFormatter {
 		assertEquals("   SLU    ", f.center("SLU"));
 	}
 
+	@Test
+	public void testCrazyCenterLine() {
+		Formatter f = new Formatter();
+		f.setLineWidth(9);
+		String thomasGrade = "f";
+		assertEquals("    f    ", f.center(thomasGrade));
+	}
+
 }

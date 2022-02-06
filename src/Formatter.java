@@ -17,7 +17,8 @@ public class Formatter {
 		b.append(spaces, 0, padding);
 		b.append(string);
 		b.append(spaces, 0, padding);
-		if(string.length()%2==1) b.append(spaces, 0, 1);
+		if (string.length() % 2 == 1 && (lineWidth % 2 != 1))
+			b.append(spaces, 0, 1);
 		return b.toString();
 	}
 
