@@ -5,8 +5,8 @@ import org.junit.jupiter.api.Test;
 class TestFormatter {
 
 	@Test
-	void test() {
-		fail("Not yet implemented");
+	public void testCenterLine() {
+		Formatter f = new Formatter();
 	}
 
 }
