@@ -9,6 +9,7 @@ class TestFormatter {
 		Formatter f = new Formatter();
 		f.setLineWidth(10);
 		assertEquals("   word   ", f.center("word"));
+		assertEquals("   SLU    ", f.center("SLU"));
 	}
 
 }
